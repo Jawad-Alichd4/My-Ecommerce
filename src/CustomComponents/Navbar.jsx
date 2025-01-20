@@ -1,9 +1,10 @@
-// import { useSelector } from "react-redux";
+import React, { useState } from "react";
+import { CiSearch } from "react-icons/ci";
+import { CiHeart } from "react-icons/ci";
+import { CiShoppingCart } from "react-icons/ci";
+import { GiHamburgerMenu } from "react-icons/gi";
 import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
-import { useState } from "react";
-import { CiHeart , CiSearch , CiShoppingCart } from "react-icons/ci";
-import {GiHamburgerMenu} from 'react-icons/gi'
 const Navabar = () => {
   const [toggle, setToggle] = useState(false);
   const { favoriteProducts } = useSelector((state) => state.favorite);
@@ -23,16 +24,16 @@ const Navabar = () => {
               <Link to="/">Home</Link>
             </li>
             <li className="text-[1.2rem] font-semibold hover:border border-black w-[5.5rem] h-[2rem] px-2 flex justify-center items-center rounded-[5px]">
-            <Link to="/product">Product</Link>
+              <Link to="/product">Product</Link>
             </li>
             <li className="text-[1.2rem] font-semibold hover:border border-black w-[5.5rem] h-[2rem] px-2 flex justify-center items-center rounded-[5px]">
-            <Link to="/About">About</Link>
+              Contact
             </li>
             <li className="text-[1.2rem] font-semibold hover:border border-black w-[5.5rem] h-[2rem] px-2 flex justify-center items-center rounded-[5px]">
-            <Link to="/Signup">Signup</Link>
+              Signup
             </li>
             <li className="text-[1.2rem] font-semibold hover:border border-black w-[5.5rem] h-[2rem] px-2 flex justify-center items-center rounded-[5px]">
-            <Link to="/contact">Contact</Link>
+              About
             </li>
           </ul>
         </div>
@@ -97,7 +98,10 @@ const Navabar = () => {
           Contact
         </li>
         <li className="text-[1.2rem] font-semibold hover:border border-black w-[5.5rem] h-[2rem] px-2 flex justify-center items-center rounded-[5px]">
-          Logout
+          Signup
+        </li>
+        <li className="text-[1.2rem] font-semibold hover:border border-black w-[5.5rem] h-[2rem] px-2 flex justify-center items-center rounded-[5px]">
+          About
         </li>
       </ul>
     </>
