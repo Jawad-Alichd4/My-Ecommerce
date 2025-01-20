@@ -6,6 +6,7 @@ import Product from './lib/pages/Product.jsx';
 import Contact from './lib/pages/Contact.jsx';
 import Signup from './lib/pages/Signup.jsx';
 import { useState } from 'react';
+import About from './lib/pages/About.jsx';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route path="/product" element={<Product />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/signup" element={<Signup />} /> 
+        <Route path="/about" element={<About />} /> 
       </Routes>
       
     </div>

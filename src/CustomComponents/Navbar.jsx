@@ -23,13 +23,16 @@ const Navabar = () => {
               <Link to="/">Home</Link>
             </li>
             <li className="text-[1.2rem] font-semibold hover:border border-black w-[5.5rem] h-[2rem] px-2 flex justify-center items-center rounded-[5px]">
-              Product
+            <Link to="/product">Product</Link>
             </li>
             <li className="text-[1.2rem] font-semibold hover:border border-black w-[5.5rem] h-[2rem] px-2 flex justify-center items-center rounded-[5px]">
-              Contact
+            <Link to="/About">About</Link>
             </li>
             <li className="text-[1.2rem] font-semibold hover:border border-black w-[5.5rem] h-[2rem] px-2 flex justify-center items-center rounded-[5px]">
-              Logout
+            <Link to="/Signup">Signup</Link>
+            </li>
+            <li className="text-[1.2rem] font-semibold hover:border border-black w-[5.5rem] h-[2rem] px-2 flex justify-center items-center rounded-[5px]">
+            <Link to="/contact">Contact</Link>
             </li>
           </ul>
         </div>
