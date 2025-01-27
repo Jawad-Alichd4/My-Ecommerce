@@ -27,13 +27,13 @@ const Navabar = () => {
               <Link to="/product">Product</Link>
             </li>
             <li className="text-[1.2rem] font-semibold hover:border border-black w-[5.5rem] h-[2rem] px-2 flex justify-center items-center rounded-[5px]">
-              Contact
+            <Link to="/contact">Contact</Link>
             </li>
             <li className="text-[1.2rem] font-semibold hover:border border-black w-[5.5rem] h-[2rem] px-2 flex justify-center items-center rounded-[5px]">
-              Signup
+            <Link to="/signup">Signup</Link>
             </li>
             <li className="text-[1.2rem] font-semibold hover:border border-black w-[5.5rem] h-[2rem] px-2 flex justify-center items-center rounded-[5px]">
-              About
+            <Link to="/about">About</Link>
             </li>
           </ul>
         </div>

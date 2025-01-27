@@ -1,8 +1,11 @@
+import { CarouselPlugin } from '@/components/ui/carousel'
 import React from 'react'
 
 const Home = () => {
   return (
-    <div>Home</div>
+    <div className=''>
+<CarouselPlugin />
+    </div>
   )
 }
 
