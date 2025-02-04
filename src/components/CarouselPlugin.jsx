@@ -1,26 +1,25 @@
-import * as React from "react"
-import Autoplay from "embla-carousel-autoplay"
-
-import { Card, CardContent } from "@/components/ui/card"
+import * as React from "react";
+import Autoplay from "embla-carousel-autoplay";
+import { Card, CardContent } from "@/components/ui/card";
 import {
   Carousel,
   CarouselContent,
   CarouselItem,
   CarouselNext,
   CarouselPrevious,
-} from "@/components/ui/carousel"
+} from "@/components/ui/carousel";
 
 export function CarouselPlugin() {
-  const plugin = React.useRef(
+  const autoplay = React.useRef(
     Autoplay({ delay: 2000, stopOnInteraction: true })
-  )
+  );
 
   return (
     <Carousel
-      plugins={[plugin.current]}
+      plugins={[autoplay.current]}
       className="w-full max-w-xs"
-      onMouseEnter={plugin.current.stop}
-      onMouseLeave={plugin.current.reset}
+      onMouseEnter={() => autoplay.current.stop()}
+      onMouseLeave={() => autoplay.current.reset()}
     >
       <CarouselContent>
         {Array.from({ length: 5 }).map((_, index) => (
@@ -38,5 +37,5 @@ export function CarouselPlugin() {
       <CarouselPrevious />
       <CarouselNext />
     </Carousel>
-  )
+  );
 }

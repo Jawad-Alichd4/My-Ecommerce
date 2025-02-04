@@ -1,12 +1,12 @@
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 import Navbar from './CustomComponents/Navbar.jsx';
-import Home from './lib/pages/Home.jsx';
-import Product from './lib/pages/Product.jsx';
-import Contact from './lib/pages/Contact.jsx';
-import Signup from './lib/pages/Signup.jsx';
+import Home from './pages/Home.jsx';
+import Product from './pages/Product.jsx';
+import Contact from './pages/Contact.jsx';
+import Signup from './pages/Signup.jsx';
 import { useState } from 'react';
-import About from './lib/pages/About.jsx';
+import About from './pages/About.jsx';
 
 function App() {
   return (
